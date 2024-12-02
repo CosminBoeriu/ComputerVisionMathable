@@ -2,10 +2,10 @@ import os
 import sys
 import cv2 as cv
 from BoardRecognition import *
-from Code.TileRecognition import recolor_playingboard
+from TileRecognition import recolor_playingboard
 from TileRecognition import *
-from Code.basics import show_image
-from tqdm import tqdm
+from basics import show_image
+
 os.environ["QT_QPA_PLATFORM"] = "xcb"
 
 # Calea unde sa fie create fisierele rezultat
@@ -50,7 +50,7 @@ if __name__ == '__main__':
 
     for game in GAMES:
 
-        background_image = cv.imread("./Data/imagini_auxiliare/01.jpg")
+        background_image = cv.imread("./Data/base_table.jpg")
         horizontal_lines, vertical_lines = recognize_board_and_red_edges(background_image)
 
         gameboard = [list(x) for x in INITIAL_BOARD]
