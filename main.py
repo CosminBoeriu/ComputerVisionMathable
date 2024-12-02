@@ -12,7 +12,7 @@ os.environ["QT_QPA_PLATFORM"] = "xcb"
 OUTPUT_PATH = "./352_Boeriu_George_Cosmin/"
 
 # Calea de unde sa fie luate testele
-PATH = "../../Proiect1/Data/antrenare/"
+PATH = ""
 
 # Cate imagini are un joc
 GAME_LENGTH = 50
